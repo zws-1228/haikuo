@@ -20,10 +20,7 @@ function banner(d, blist, time, id) {
         d.push({
             img: blist[j].img,
             desc: '0',
-            url: $('#noLoading#').lazyRule((j, arrs) => {
-                        return 'pics://' + arrs.slice(j, Number(j)+1).join('&&')
-                    }, j, arrs),
-            col_type: getItem(id + "col_type", "card_pic_1"),
+            url: hiker://home@alist,
             extra: {
                 id: id,
                 longClick: [{
