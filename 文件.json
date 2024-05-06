@@ -43,9 +43,7 @@ function banner(d, blist, time, id) {
                                 try {
                                     updateItem(id, {
                                         img: blist[k].img,
-                                        url: $('#noLoading#').lazyRule((k, arrs) => {
-                                            return 'pics://' + arrs.slice(0).join('&&')
-                                        }, k, arrs),
+                                        url: 'hiker://home@alist',
                                         desc: '0',
                                     })
                                 } catch (e) {
@@ -168,9 +166,7 @@ function banner(d, blist, time, id) {
             try {
                 updateItem(id, {
                     img: blist[k].img,
-                    url: $('#noLoading#').lazyRule((k, arrs) => {
-                        return 'pics://' + arrs.slice(0).join('&&')
-                    }, k, arrs),
+                    url: 'hiker://home@alist',
                     desc: '0',
                 })
             } catch (e) {
