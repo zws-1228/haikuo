@@ -19,7 +19,7 @@ function banner(d, blist, time, id) {
         }
         d.push({
             img: blist[j].img,
-            desc: '1',
+            desc: '0',
             url: $('#noLoading#').lazyRule((j, arrs) => {
                         return 'pics://' + arrs.slice(j, Number(j)+1).join('&&')
                     }, j, arrs),
