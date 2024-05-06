@@ -19,10 +19,7 @@ function banner(d, blist, time, id) {
         }
         d.push({
             img: blist[j].img,
-            title: '耳机是人类的避难所🌞🌞音乐是生命的救心丸',
-    pic_url: "http://zws1228.serv00.net/d/%E9%98%BF%E9%87%8C%E4%BA%91/%E5%A4%87%E4%BB%BD/1714994644793.png?sign=tbejS2gtFLeh99HKwgL6ZuGQYsa1ZRTpcMBTa2eodwQ=:0",
-    col_type: "avatar",
-    desc: '0',
+            desc: '0',
             url: $('#noLoading#').lazyRule((j, arrs) => {
                         return 'pics://' + arrs.slice(j, Number(j)+1).join('&&')
                     }, j, arrs),
