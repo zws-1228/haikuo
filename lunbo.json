@@ -20,7 +20,7 @@ function banner(d, blist, time, id) {
         d.push({
             img: blist[j].img,
             desc: '0',
-            url: 'https://api.03c3.cn/api/zb',
+            url: '',
             col_type: getItem(id + "col_type", "card_pic_1"),
             extra: {
                 id: id,
