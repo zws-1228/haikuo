@@ -43,7 +43,7 @@ function banner(d, blist, time, id) {
                                 try {
                                     updateItem(id, {
                                         img: blist[k].img,
-                                        url: 'https://api.03c3.cn/api/zb',
+                                        url: 'hiker://home@alist',
                                         desc: '0',
                                     })
                                 } catch (e) {
@@ -166,7 +166,7 @@ function banner(d, blist, time, id) {
             try {
                 updateItem(id, {
                     img: blist[k].img,
-                    url: 'https://api.03c3.cn/api/zb',
+                    url: 'hiker://home@alist',
                     desc: '0',
                 })
             } catch (e) {
