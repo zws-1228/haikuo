@@ -8,7 +8,18 @@ function banner(d, blist, time, id) {
         if (time == undefined || time < 100) {
             time = 3000
         }
-        desc: '0',
+        var  arrs  =   []
+        for  (let  ii  in  blist)  {        
+            arrs.push(blist[ii].img);   
+        }
+        let j = getMyVar('j', '0')
+        clearMyVar('j')
+        if (j > blist.length - 1) {
+            j = 0;
+        }
+        d.push({
+            img: blist[j].img,
+            desc: '0',
             url: 'https://api.03c3.cn/api/zb',
             col_type: getItem(id + "col_type", "card_pic_1"),
             extra: {
@@ -456,4 +467,3 @@ if (arr == '' || arr[0].img == '') {
         })
     }
 }
-
