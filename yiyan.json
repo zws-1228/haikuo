@@ -1,0 +1,26 @@
+function getColor(){
+var colors = [
+"#83559e",
+"#ff7512",
+"#cb54ff",
+"#ff5358",
+"#ff9044",
+"#7678ff",
+"#34b1ff",
+];//颜色可自行添加
+return colors[Math.floor(Math.random() * colors.length)]//返回随机颜色
+}
+let word;
+var tips = "此情若是长久时,网络不好可不行";//无网络时使用语句
+let url="https://v1.hitokoto.cn/?encode=text&c=a&c=b&c=c&c=d&c=e&c=f&c=g&c=h&c=i&c=l&c=j&c=k&lang=cn";//一言接口可自行修改
+try {
+let yy = request( url, { timeout: 500 } );//访问接口获取一言值
+if (yy.length< 2) {//访问长度小于2说明没有获得返回值及无网络或接口坏掉了
+word = '<small><font color="'+getColor()+'">'+tips+'</font></small>';//赋值
+} else {
+word = '<small><font color="'+getColor()+'">'+yy+'</font></small>';//赋值
+}
+} catch (e) {
+log(e);//如出错打印日志
+}
+[]
